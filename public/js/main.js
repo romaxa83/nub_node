@@ -4,10 +4,12 @@ $(document).ready(function(){
 		var name = $('#name').val();
 		var city = $('#city').val();
 		var age = $('#age').val();
+		var email = $('#email').val();
 		var data = {
 			name:name,
 			city:city,
-			age:age	
+			age:age,
+			emil:email	
 		}
 		$.post({
 			url:'/',

@@ -1,5 +1,28 @@
 <h1>{{ title }}</h1>
 
-{{# each users }}
-	<p>Имя: {{ this.name }},Город: {{this.city}},Возраст: {{this.age}}</p>
-{{/each}}
+<table class="table table-inverse">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>id</th>
+      <th>Имя</th>
+      <th>Email</th>
+      <th>Город</th>
+      <th>Возраст</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  {{# each users}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{ this._id }}</td>
+      <td>{{ this.name }}</td>
+      <td>{{ this.email }}</td>
+      <td>{{ this.city }}</td>
+      <td>{{ this.age }}</td>
+    </tr>
+  {{/each}}
+
+  </tbody>
+</table>

@@ -6,6 +6,11 @@ const chalk = require ('chalk');
 const moment = require('moment');
 const bodyParser = require('body-parser');
 const log = require('../libs/log')(module);
+const parsing = require('../controllers/parsing');
+// parsing
+const request = require('request');
+const cheerio = require('cheerio');
+var url = 'https://www.premierleague.com/';
 
 const User = require('../models/user');
 
@@ -66,7 +71,7 @@ router.get('/add-user', function(req, res) {
 
 router.get('/user', (req,res) => {
   User.find({},(err,user) => {
-    res.render('users',{title:'Users',users:user});
+    res.render('users',{title:'Добавленные user\'s',users:user});
   });
 });
 
@@ -76,5 +81,21 @@ router.get('/user/:name',(req,res) => {
         res.render('users',{title:req.params.name,users:user});
     });
 });
+
+router.get('/parsing',(req,res) => {
+  // request(url,function(err,response,body){
+  //     if(err){
+  //       log.err(err);
+  //       console.log(err);
+  //     } else {
+  //       var $ = cheerio.load(body);
+  //       var team = $('.matchAbridged > .teamName > abbr').attr('title');
+  //       res.send(`team - ${team}`);
+  //     }
+  // })
+  var team  = parsing;
+  console.log(team);
+ res.render('parsing',{title:'Парсинг',team:team})
+})
 
 module.exports = router;
