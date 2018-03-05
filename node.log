@@ -191,3 +191,35 @@
 {"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T11:06:30.515Z"}
 {"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T11:07:40.790Z"}
 {"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T11:07:40.809Z"}
+{"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T12:18:35.888Z"}
+{"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T12:18:35.908Z"}
+{"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T13:44:53.324Z"}
+{"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T13:44:53.371Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: testun.users.$email_1  dup key: { : null }","op":{"city":"Odessa","age":12,"_id":"5a9d49fe29ad3a05be4538e7","created":"2018-03-05T13:45:34.342Z","name":"Roman"}}
+{"level":"info","message":"Пользователь Roman добавленн в базу данных","label":"router/router.js","timestamp":"2018-03-05T13:45:34.454Z"}
+{"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T13:46:26.147Z"}
+{"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T13:46:26.167Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: testun.users.$email_1  dup key: { : null }","op":{"city":"odessa","age":13,"_id":"5a9d4a4a532d9006407b75cc","created":"2018-03-05T13:46:50.642Z","name":"Roman"}}
+{"level":"info","message":"Пользователь Roman добавленн в базу данных","label":"router/router.js","timestamp":"2018-03-05T13:46:50.660Z"}
+{"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T13:47:36.072Z"}
+{"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T13:47:36.092Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: testun.users.$email_1  dup key: { : null }","op":{"city":"odessa","age":34,"_id":"5a9d4acc4cd2a9069921026e","created":"2018-03-05T13:49:00.084Z","name":"Roman"}}
+{"level":"info","message":"Пользователь Roman добавленн в базу данных","label":"router/router.js","timestamp":"2018-03-05T13:49:00.112Z"}
+{"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T13:50:08.341Z"}
+{"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T13:50:08.361Z"}
+{"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T13:50:10.849Z"}
+{"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T13:50:10.869Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: testun.users.$email_1  dup key: { : null }","op":{"city":"odessa","age":34,"_id":"5a9d4b33bac3a3072613acc5","created":"2018-03-05T13:50:43.796Z","name":"roman"}}
+{"level":"info","message":"Пользователь roman добавленн в базу данных","label":"router/router.js","timestamp":"2018-03-05T13:50:43.814Z"}
+{"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T13:51:21.124Z"}
+{"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T13:51:21.144Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: testun.users.$email_1  dup key: { : null }","op":{"city":"odessa","age":32,"_id":"5a9d4b73868a990780d2422a","created":"2018-03-05T13:51:47.811Z","name":"roman"}}
+{"level":"info","message":"Пользователь roman добавленн в базу данных","label":"router/router.js","timestamp":"2018-03-05T13:51:47.829Z"}
+{"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T13:52:58.088Z"}
+{"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T13:52:58.108Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: testun.users.$email_1  dup key: { : null }","op":{"city":"odessa","age":22,"_id":"5a9d4bd7fc9eeb07c18a4ebb","created":"2018-03-05T13:53:27.205Z","name":"roman"}}
+{"level":"info","message":"Пользователь roman добавленн в базу данных","label":"router/router.js","timestamp":"2018-03-05T13:53:27.223Z"}
+{"level":"info","message":"MongoDb подключенна","label":"nub_node/server.js","timestamp":"2018-03-05T13:54:33.414Z"}
+{"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"nub_node/server.js","timestamp":"2018-03-05T13:54:33.434Z"}
+{"message":"User validation failed: email: Path `email` is required.","errors":{"email":{"message":"Path `email` is required.","name":"ValidatorError","properties":{"type":"required","message":"Path `{PATH}` is required.","path":"email"},"kind":"required","path":"email","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: User validation failed: email: Path `email` is required.\n    at new ValidationError (/var/www/nub_node/node_modules/mongoose/lib/error/validation.js:28:11)\n    at model.Document.invalidate (/var/www/nub_node/node_modules/mongoose/lib/document.js:1675:32)\n    at /var/www/nub_node/node_modules/mongoose/lib/document.js:1547:17\n    at validate (/var/www/nub_node/node_modules/mongoose/lib/schematype.js:784:7)\n    at /var/www/nub_node/node_modules/mongoose/lib/schematype.js:829:11\n    at Array.forEach (<anonymous>)\n    at SchemaString.SchemaType.doValidate (/var/www/nub_node/node_modules/mongoose/lib/schematype.js:789:19)\n    at /var/www/nub_node/node_modules/mongoose/lib/document.js:1545:9\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"ValidationError","level":"error","label":"router/router.js","timestamp":"2018-03-05T13:54:40.052Z"}
+{"level":"info","message":"Пользователь roman добавленн в базу данных","label":"router/router.js","timestamp":"2018-03-05T13:54:40.052Z"}

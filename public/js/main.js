@@ -17,7 +17,7 @@ $(document).ready(function(){
 			success:function(res,i){
 				console.log(res);
 				console.log(i);
-				window.location.replace(res);
+				// window.location.replace(res);
 			}
 		})
 		console.log(data);
