@@ -6,6 +6,7 @@ const chalk = require ('chalk');
 const moment = require('moment');
 const bodyParser = require('body-parser');
 const log = require('../libs/log')(module);
+const parsing = require('../controllers/parsing');
 
 const User = require('../models/user');
 
@@ -66,7 +67,7 @@ router.get('/add-user', function(req, res) {
 
 router.get('/user', (req,res) => {
   User.find({},(err,user) => {
-    res.render('users',{title:'Users',users:user});
+    res.render('users',{title:'Добавленные user\'s',users:user});
   });
 });
 
@@ -76,5 +77,12 @@ router.get('/user/:name',(req,res) => {
         res.render('users',{title:req.params.name,users:user});
     });
 });
+
+router.get('/parsing',(req,res) => {
+  var team  = parsing;
+  console.log(`команда ${parsing}`);
+  console.log(parsing.team);
+ res.render('parsing',{title:'Парсинг',team:parsing.team})
+})
 
 module.exports = router;

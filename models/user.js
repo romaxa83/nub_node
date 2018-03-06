@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const userSchema = mongoose.Schema({
   name:{
@@ -9,6 +9,11 @@ const userSchema = mongoose.Schema({
     	maxlength:20,		// максимальное кол-во символов
     	default: "NoName"	// имя по умолчанию
   	},
+  email:{
+      type: String,
+      required:true,
+       unique:true    
+  },  
   age:{
   		type: Number,
   		required: true,
