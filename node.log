@@ -10,3 +10,4 @@
 {"level":"info","message":"MongoDb подключенна","label":"D:\\node_test\\nub_node\\server.js","timestamp":"2018-03-04T14:52:08.308Z"}
 {"level":"info","message":"MongoDb подключенна","label":"D:\\node_test\\nub_node\\server.js","timestamp":"2018-03-04T14:56:42.521Z"}
 {"level":"info","message":"Сервер стартовал по порту - 8080 со своим ДЕМОНОМ!!","label":"D:\\node_test\\nub_node\\server.js","timestamp":"2018-03-04T14:56:42.545Z"}
+{"level":"info","message":"Пользователь Roman добавленн в базу данных","label":"D:\\node_test\\nub_node\\router\\router.js","timestamp":"2018-03-04T16:00:12.295Z"}
