@@ -1,11 +1,10 @@
 // const hbs = require('hbs');
 
-const config = {};
-
-config.port = 8080;
-
-config.url_mongo = 'mongodb://localhost/testun';
-
+const config = {
+	url_mongo : 'mongodb://localhost/tester',
+	port : 8080,
+	secret : 'secretkey'
+};
 
 // ======= Настройки для Handlebars ==========
 // config.hbs = hbs({

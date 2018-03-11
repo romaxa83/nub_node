@@ -1,7 +1,7 @@
 const request = require('request');
 const needle = require('needle');
 const cheerio = require('cheerio');
-const log = require('../libs/log')(module);
+// const log = require('../libs/log')(module);
 
 var url = 'https://www.premierleague.com/';
 

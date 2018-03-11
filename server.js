@@ -1,15 +1,22 @@
 const express = require ('express');
-const log = require('./libs/log')(module);
+const session = require('express-session');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const log = require('./libs/chalk');
+
+// const log = require('./libs/log')(module);
 const router = require('./router/router');
+const AuthRouter = require('./router/auth');
 const config = require('./libs/config');
 const path = require('path');
-var hbs = require('express-handlebars');
+const hbs = require('express-handlebars');
 
 const app = express();
 
 // app.use(favicon(__dirname + '/public/img/nodejs.png'));
 
+// подключение handlebars
 app.engine('hbs',hbs({
 	extname:'hbs',
 	defaultLayout:'layout',
@@ -17,14 +24,25 @@ app.engine('hbs',hbs({
 }));
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','hbs');
-
+// подключение статических файлов
 app.use(express.static(path.join(__dirname, 'public')));
+// подключение зависимостей
+app.use(morgan('combined'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+// Настройки сессии
+app.use(session({
+  resolve:true,
+  saveUninitialized:true,
+  secret:config.secret
+}));
 
 app.use('/',router);
+app.use('/api',AuthRouter);
 
 const startServer = () => {
 	app.listen(config.port);
-	log.info(`Сервер стартовал по порту - ${config.port} со своим ДЕМОНОМ!!`);
+	console.log(log.green(`Server listening  on port - ${config.port}`));
 };
 
 const connectDB = () => {
@@ -34,7 +52,7 @@ const connectDB = () => {
 	};
 
 	mongoose.connect(config.url_mongo,options);
-	log.info(`MongoDb подключенна`);
+	console.log(log.green(`MongoDb connected`));
 	return mongoose.connection
 };
 
