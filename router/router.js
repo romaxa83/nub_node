@@ -8,6 +8,7 @@ const moment = require('moment');
 const bodyParser = require('body-parser');
 // const log = require('../libs/log')(module);
 const parsing = require('../controllers/parsing');
+const UserControllers = require('../controllers/user');
 
 const User = require('../models/user');
 
@@ -49,10 +50,7 @@ router.get('/about', function(req, res) {
   	// console.log(log.info(`PATH: ${req.url} ${time}`));
 });
 
-router.get('/add-user', function(req, res) {
-    res.render('add_user',{title:'Добавить пользователя',condition:false});
-    // console.log(log.info(`PATH: ${req.url} ${time}`));
-  })
+router.get('/add-user', UserControllers.showUsers)
       .post('/add-user',urlencodedParser,(req,res) => {
           if(req.body){
               const user = new User(req.body);
@@ -60,7 +58,6 @@ router.get('/add-user', function(req, res) {
                 if(err) {
                   consol.log(log.error(err));
                 } else {
-                  // console.log(log.green(`Пользователь ${req.body.name} добавленн в базу данных`));
                   res.send(`/user/${req.body.name}`);
                 }
               })

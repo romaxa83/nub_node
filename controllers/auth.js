@@ -13,6 +13,6 @@ module.exports.signup = async (req,res,next) => {
 	res.json(user);
 };
 
-module.exports.signin = async (req,res,next) => {
+module.exports.signin = (req,res,next) => {
 	res.send('signin');
 };

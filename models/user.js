@@ -12,11 +12,11 @@ const userSchema = mongoose.Schema({
       lovercase:true,     //переводит в нижний регистр
       index:true
   	},
-  // email:{
-  //     type: String,
-  //     // required:true,
-  //     unique:true    
-  // },  
+  email:{
+      type: String,
+      // required:true,
+      unique:true    
+  },  
   age:{
   		type: Number,
   		// required: true,
@@ -42,20 +42,20 @@ const userSchema = mongoose.Schema({
 })
 // { versionKey: true })      //отключает версию документа(__v)
 
-userSchema.pre('save',function(next){
-  // проверяем изменялся ли пароль
-  if (!this.isModified('password')) {
-    return next();
-  }
+// userSchema.pre('save',function(next){
+//   // проверяем изменялся ли пароль
+//   if (!this.isModified('password')) {
+//     return next();
+//   }
 // генерируем соль для пароля и хеш
-  const salt = bcrypt.genSalt(10);
-  const hash = bcrypt.hash(this.password,salt);
-  this.password = hash;
-});
+//   const salt = bcrypt.genSalt(10);
+//   const hash = bcrypt.hash(this.password,salt);
+//   this.password = hash;
+// });
 
-userSchema.methods.comaprePassword = function(password){
-  return bcrypt.comapre(password,this.password);
-}
+// userSchema.methods.comaprePassword = function(password){
+//   return bcrypt.comapre(password,this.password);
+// }
 
 // userSchema.statics.findUserByName = function(err,cb){
 // 	return this.findOne({name:new RegExp('vova','i')},cb);

@@ -27,7 +27,7 @@ app.set('view engine','hbs');
 // подключение статических файлов
 app.use(express.static(path.join(__dirname, 'public')));
 // подключение зависимостей
-app.use(morgan('combined'));
+app.use(morgan('tiny'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // Настройки сессии
@@ -38,7 +38,7 @@ app.use(session({
 }));
 
 app.use('/',router);
-app.use('/api',AuthRouter);
+app.use('/',AuthRouter);
 
 const startServer = () => {
 	app.listen(config.port);
